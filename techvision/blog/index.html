@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
   <title>TechVision Blog</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      color: black;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      width: 260px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Bem-vindo ao Blog da TechVision 🚀</h1>
-  <p>Conteúdo público do blog.</p>
+
+<header>
+  <h1>🚀 TechVision</h1>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Artigos</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Blog de Tecnologia</h2>
+  <p>Conteúdo sobre Docker, DevOps e Nginx</p>
+  <a href="#" class="btn">Explorar</a>
+</section>
+
+<section class="cards">
+
+  <div class="card">
+    <h3>🐳 Docker</h3>
+    <p>Aprenda containerização na prática.</p>
+  </div>
+
+  <div class="card">
+    <h3>🌐 Nginx</h3>
+    <p>Servidor web rápido e eficiente.</p>
+  </div>
+
+  <div class="card">
+    <h3>⚙️ DevOps</h3>
+    <p>Automatize e escale aplicações.</p>
+  </div>
+
+</section>
+
+<footer>
+  © 2026 TechVision — Todos os direitos reservados
+</footer>
+
 </body>
 </html>
