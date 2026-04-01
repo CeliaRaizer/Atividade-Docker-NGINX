@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastBite</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f7fa;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #007bcd, #92cafe);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">🍔 FastBite</span>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Delivery Saudável 🚀</h1>
+    <p>Comida rápida, saudável e deliciosa direto na sua casa</p>
+  </section>
+
+  <!-- Produtos -->
+  <div class="container mt-5">
+    <div class="row">
+
+      <!-- Produto 1 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/image.png" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Salada Fit</h5>
+            <p class="card-text">Leve, saudável e nutritiva</p>
+            <button class="btn btn-primary w-100" onclick="pedido('Salada Fit')">
+              Pedir
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/unnamed.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Prato Natural</h5>
+            <p class="card-text">Equilíbrio perfeito de nutrientes</p>
+            <button class="btn btn-primary w-100" onclick="pedido('Prato Natural')">
+              Pedir
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/vegetable-juices-1725835_960_720.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Suco Detox</h5>
+            <p class="card-text">Refrescante e saudável</p>
+            <button class="btn btn-primary w-100" onclick="pedido('Suco Detox')">
+                Pedir
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function pedido(item) {
+      alert("🛒 Você pediu: " + item);
+    }
+  </script>
+
+</body>
+</html>
