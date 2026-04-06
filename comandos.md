@@ -9,5 +9,9 @@ docker-compose up --build
 docker compose down
 ```
 
-## acessar
+## acessar FastBite
 http://localhost
+
+## acessar TechVision
+http://blog.techvision.local
+http://docs.techvision.local
