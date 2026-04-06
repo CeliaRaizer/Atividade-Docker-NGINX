@@ -1,3 +1,5 @@
+Alunas: Célia e Alessandra 
+
 # Atividade-Docker-NGINX
 
 ## FastBite
